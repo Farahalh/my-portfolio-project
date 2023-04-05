@@ -12,27 +12,46 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="menuContainer">
-    <div class="hamburgerMenu">
-      <ul class="menu">
-        <li>
-          <a href="#" class="menuItems">Home</a>
-        </li>
-        <li>
-          <a href="#" class="menuItems">About</a>
-        </li>
-        <li>
-          <a href="#" class="menuItems">Work</a>
-        </li>
-        <li>
-          <a href="#" class="menuItems">Contact</a>
-        </li>
-      </ul>
+    <nav class="topNavigator">
       <button class="hamburger">
-        <i class="fa-solid fa-bars fa-2xl menuIcon"></i>
-        <i class="fa-solid fa-xmark fa-2xl closeIcon"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </button>
-    </div>
+    </nav>
+    <div class="overlay"></div>
+    <nav class="sideNavigator">
+      <button class="menuX">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+      <ul class="menuItems">
+        <li><a href="#" class="menuLink">Home</a></li>
+        <li><a href="#" class="menuLink">About</a></li>
+        <li><a href="#" class="menuLink">Work</a></li>
+        <li><a href="#" class="menuLink">Contact</a></li>
+      </ul>
     </nav>
 
     <div class="hero">
@@ -113,8 +132,8 @@
       <p>farah.alhaddad@hotmail.com</p>
       <p>+46 70 090 27 89</p>
     </footer>
-<i class="fa-brands fa-github githubIcon"></i>
-<i class="fa-brands fa-linkedin linkedinIcon"></i>
+    <i class="fa-brands fa-github githubIcon"></i>
+    <i class="fa-brands fa-linkedin linkedinIcon"></i>
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,23 +1,18 @@
-let menu = document.querySelector(".menu");
-let menuItems = document.querySelector(".menuItems");
-let hamburger = document.querySelector(".hamburgerMenu");
-let closeIcon = document.querySelector(".closeIcon");
-let menuIcon = document.querySelector(".menuIcon");
+let sideNavigator = document.querySelector(".sideNavigator");
+let overlay = document.querySelector(".overlay");
+let hamburger = document.querySelector(".hamburger");
+let menuX = document.querySelector(".menuX");
+let menuItems = document.querySelectorAll(".menuLink");
 
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
-}
-
-hamburger.addEventListener("click", toggleMenu);
-
-menuItems.forEach(function (menuItems) {
-  menuItems.addEventListener("click", toggleMenu);
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", toggleHamburger);
 });
+
+hamburger.addEventListener("click", toggleHamburger);
+menuX.addEventListener("click", toggleHamburger);
+overlay.addEventListener("click", toggleHamburger);
+
+function toggleHamburger() {
+  overlay.classList.toggle("showOverlay");
+  sideNavigator.classList.toggle("showNavigator");
+}
