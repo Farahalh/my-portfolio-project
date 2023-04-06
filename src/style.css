@@ -303,7 +303,9 @@ h1 {
 }
 
 .footerContainer {
- margin-left: 289px;
+  max-width: 1440px;
+  max-height: 320px;
+    margin-left: 289px;
 }
 
 .contactBlockFooter {
