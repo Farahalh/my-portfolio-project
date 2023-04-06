@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #e5e5e5;
+  --bg-color: #faf4f0;
   --font-family: Helvetica, sans-serif;
   --primary-font-color: #473262;
   --rectangle-color: #473262;
@@ -188,6 +188,7 @@ h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 96px;
+  margin-top: 30px;
 }
 
 .aboutMeText {
@@ -211,7 +212,7 @@ h1 {
 }
 
 .cv {
-  margin-bottom: 90px;
+  margin-bottom: 136px;
   margin-left: 127px;
 }
 
@@ -250,14 +251,9 @@ h1 {
   line-height: 25px;
 }
 
-.footerContainer {
-  max-width: 1440px;
-  max-height: 320px;
+.contactBlockFooter{
   margin-left: 289px;
-}
-
-.contactBlockFooter {
-  margin-bottom: -270px;
+  margin-bottom: -300px;
 }
 
 .contactBlockFooter p {
@@ -268,32 +264,9 @@ h1 {
   color: white;
 }
 
-.footerIcons {
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: 500px;
-  margin-right: 377px;
-}
-
-.footerIcons a {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: white;
-  text-decoration: none;
-}
-
-.footerIcons p {
-  width: 36px;
-  height: 36px;
-}
-
 .rectangleThree {
   width: 1440px;
   height: 320px;
-  margin: 0;
-  padding: 0;
   background: var(--rectangle-color);
   z-index: -1;
 }
