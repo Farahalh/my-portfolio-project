@@ -6,16 +6,9 @@
   --rectangle-shadow-color: rgb(219, 197, 248);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--bg-color);
+  max-width: 1440px;
 }
 
 h1 {
@@ -211,7 +204,6 @@ h1 {
   padding: 8px 32px;
   height: 48px;
   padding: 8px, 32px;
-  text-decoration: none;
   border-radius: 48px;
   color: black;
   border: 0px;
@@ -255,17 +247,109 @@ h1 {
   width: 640px;
   height: 399px;
   border-radius: 24px;
-  background: #473262;
-  border: black;
+  background: var(--bg-color);
+  border: solid 0.1px black;
   margin-top: 128px;
   margin-left: 277px;
   box-shadow: 16px 16px 0 rgb(219, 197, 248);
 }
 
+.weatherImg {
+  width: 640px;
+  height: 399px;
+  border-radius: 24px;
+}
+
+.rectangleSpaceBtw {
+  margin-top: 70px;
+}
+
 .workDescription p {
-  margin-left: 277px;
+  margin-left: 300px;
+}
+
+.mainWorkText {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+.subWorkText {
+  font-family: var(--font-family);
+  color: var(--primary-font-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .moreWorkButton {
-    
+  padding: 8px 32px;
+  height: 48px;
+  padding: 8px, 32px;
+  border-radius: 48px;
+  color: black;
+  border: 0px;
+  background: #ffd952;
+  box-shadow: 6px 6px 0 rgb(255, 103, 72);
+  margin-top: 16px;
+  margin-left: 300px;
+  margin-bottom: 136px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footerContainer {
+  display: flex;
+}
+
+.footer {
+  margin-left: 289px;
+}
+
+.contactBlockFooter {
+  margin-bottom: -300px;
+}
+
+.contactBlockFooter p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 500px;
+  margin-right: 377px;
+}
+
+.footerIcons a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.footerIcons p {
+  width: 36px;
+  height: 36px;
+  margin-bottom: -200px;
+}
+
+.rectangleThree {
+  width: 1440px;
+  height: 320px;
+  margin: 0;
+  padding: 0;
+  background: var(--rectangle-color);
+  z-index: -1;
 }
