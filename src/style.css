@@ -218,7 +218,6 @@ h1 {
 
 .workContainer {
   display: flex;
-  margin-top: 128px;
 }
 
 .workHeading {
@@ -304,15 +303,11 @@ h1 {
 }
 
 .footerContainer {
-  display: flex;
-}
-
-.footer {
-  margin-left: 289px;
+ margin-left: 289px;
 }
 
 .contactBlockFooter {
-  margin-bottom: -300px;
+  margin-bottom: -270px;
 }
 
 .contactBlockFooter p {
@@ -342,7 +337,6 @@ h1 {
 .footerIcons p {
   width: 36px;
   height: 36px;
-  margin-bottom: -200px;
 }
 
 .rectangleThree {
