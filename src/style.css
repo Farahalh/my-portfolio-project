@@ -7,14 +7,11 @@
 }
 
 body {
+  max-width: 1312px;
   background: var(--bg-color);
-  max-width: 1440px;
 }
 
 h1 {
-  margin-top: 248px;
-  margin-left: 288px;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 64px;
   line-height: 96px;
@@ -119,42 +116,34 @@ h1 {
   display: block;
 }
 
-.heroContainer {
-  max-width: 1312px;
-  display: flex;
+.containerHero {
   margin-top: 128px;
-  z-index: 1;
 }
 
-.profilePicture {
-  margin-top: 128px;
-  margin-left: 158px;
-  z-index: 1;
-}
-
-.bgImage {
-  width: 1312px;
-  height: 320px;
-  margin-top: 250px;
-  margin-left: 64px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: none;
-}
-
-.belowHero {
-  display: flex;
-  flex-direction: column;
+.containerHero h1,
+p {
+  margin: 0;
+  margin-left: 224px;
 }
 
 .bottomVector {
-  margin-left: 256px;
+  margin: 0;
+  margin-left: 224px;
+}
+
+.profilePicture {
+  margin-left: 100px;
+}
+
+.bgImage {
+  margin-top: -300px;
+  margin-left: 64px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 
 .contactBlockStart {
-  margin-left: 288px;
   font-family: var(--font-family);
   font-weight: 400px;
   font-size: 16px;
@@ -162,15 +151,9 @@ h1 {
   color: var(--primary-font-color);
 }
 
-.aboutMe {
-  display: flex;
-  flex-direction: row;
-}
-
-.textButtonContainer {
-  margin-top: 100px;
-  margin-left: 127px;
-  margin-bottom: 183px;
+.containerSubHero {
+  margin-top: 110px;
+  margin-left: 224px;
 }
 
 .rectangleOne {
@@ -178,8 +161,6 @@ h1 {
   height: 288px;
   border-radius: 24px;
   background: var(--rectangle-color);
-  margin-top: 110px;
-  margin-left: 289px;
   box-shadow: 16px 16px 0 rgb(219, 197, 248);
 }
 
@@ -188,16 +169,19 @@ h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutMeText {
   width: 447px;
-  height: 130px;
+  height: 150px;
   font-family: var(--font-family);
   color: var(--primary-font-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
+  margin-left: 0;
 }
 
 .resumeButton {
@@ -218,33 +202,26 @@ h1 {
 
 .workContainer {
   display: flex;
+  margin-top: 162px;
 }
 
 .workHeading {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 64px;
-  margin-left: 289px;
-  margin-top: 34px;
+  margin-left: 224px;
 }
 
 .workBgImage {
-  width: 1312px;
-  height: 320px;
   margin-left: 64px;
   position: absolute;
   left: 0;
   z-index: -1;
-  background-color: none;
-}
-
-.myWork {
-  flex-direction: column;
 }
 
 .rectangleTwo {
-  width: 440px;
-  height: 399px;
+  width: 640px;
+  height: 416px;
   border-radius: 24px;
   background: var(--bg-color);
   border: solid 0.1px black;
@@ -254,8 +231,8 @@ h1 {
 }
 
 .appImg {
-  width: 440px;
-  height: 399px;
+  width: 640px;
+  height: 416px;
   border-radius: 24px;
 }
 
@@ -302,11 +279,6 @@ h1 {
   line-height: 25px;
 }
 
-.contactBlockFooter{
-  margin-left: 289px;
-  margin-bottom: -300px;
-}
-
 .contactBlockFooter p {
   font-family: var(--font-family);
   font-weight: 400;
@@ -314,9 +286,12 @@ h1 {
   line-height: 25px;
   color: white;
 }
+.icons {
+  width: 36px;
+  height: 36px;
+}
 
 .rectangleThree {
-  width: 1440px;
   height: 320px;
   background: var(--rectangle-color);
   z-index: -1;
