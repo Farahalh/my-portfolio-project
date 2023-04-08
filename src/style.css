@@ -7,7 +7,6 @@
 }
 
 body {
-  max-width: 1312px;
   background: var(--bg-color);
 }
 
@@ -226,7 +225,7 @@ p {
   background: var(--bg-color);
   border: solid 0.1px black;
   margin-top: 128px;
-  margin-left: 277px;
+  margin-left: 130px;
   box-shadow: 16px 16px 0 rgb(219, 197, 248);
 }
 
@@ -241,7 +240,7 @@ p {
 }
 
 .workDescription p {
-  margin-left: 300px;
+  margin-left: 135px;
 }
 
 .mainWorkText {
@@ -250,7 +249,6 @@ p {
   font-size: 24px;
   line-height: 36px;
   margin-top: 36px;
-  margin-bottom: 0;
 }
 
 .subWorkText {
@@ -271,7 +269,7 @@ p {
   background: #ffd952;
   box-shadow: 6px 6px 0 rgb(255, 103, 72);
   margin-top: 16px;
-  margin-left: 300px;
+  margin-left: 135px;
   margin-bottom: 136px;
   font-family: var(--font-family);
   font-weight: 700;
@@ -279,20 +277,32 @@ p {
   line-height: 25px;
 }
 
-.contactBlockFooter p {
+.containerFooter {
+  display: flex;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
   color: white;
+  margin-bottom: -200px;
 }
+
+.contactInfo img, p {
+  margin-left: 289px;
+}
+
 .icons {
   width: 36px;
   height: 36px;
+  margin-left: 190px;
+  margin-bottom: -120px;
 }
 
 .rectangleThree {
+  width: 1440px;
   height: 320px;
   background: var(--rectangle-color);
   z-index: -1;
+  top: 0;
+  right: 0;
 }
